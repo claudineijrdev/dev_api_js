@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
+     <title>Document</title>
+</head>
+<body>
+     <header>
+          <div class="container">
+               <div class="row">
+                    <h1>Bills Control</h1>
+               </div>
+          </div>
+     </header>
+     <hr>
+     <section id="category">
+          <div class="container">
+               <div class="row">
+                    <h4>New Category</h4>    
+               </div>
+               <div class="row">
+                   <div class="form-group">
+                      <input type="text" name="name" class="form-control" placeholder="Category Name" >
+                    </div>
+                    <div class="form-group">
+                         <button type="button" id="btn_create_cat" class="btn btn-primary">Send</button>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <hr>
+     <main class="container">
+          <div class="row">
+               <h4>New Bill</h4>
+          </div>
+          <div class="row">
+               <div class="form-group">
+                    <input type="text" class="form-control" name="title" placeholder="Enter Bill title"/>
+               </div>
+               <div class="form-group">
+                    <input type="text" class="form-control" name="price" placeholder="Enter Bill price"/>
+               </div>
+               <div class="form-group">
+                    <input type="text" class="form-control" name="cep" placeholder="Enter Valid CEP">
+               </div>
+               <div class="form-group">
+                    <select class="form-control" name="category" id="select_category">
+                         
+                    </select>
+               </div>
+               <div class="form-group">
+                    <button type="button" id="btn_create" class="btn btn-primary">Send</button>
+               </div>
+          </div>
+     </main>
+     <hr>
+     <section class="list">
+          <div class="container">
+               <div class="row">
+                    <table id="list_table" class="table table-bordered">
+                         <thead>
+                              <tr>
+                                   <th>Name</th>
+                                   <th>Price</th>
+                                   <th>CEP</th>
+                                   <th>Actions</th>
+                              </tr>
+                         </thead>
+                         <tbody>
+                         </tbody>
+                    </table>
+               </div>
+          </div>
+     </section>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+     <script src="./js/app.js"></script>
+</body>
+</html>
